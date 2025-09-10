@@ -5,7 +5,7 @@ on:
   schedule:
     - cron: '15 4/6 * * *'
 
-jobs:  # 1440
+jobs:  # 109
   build:
     runs-on: ubuntu-latest
 
